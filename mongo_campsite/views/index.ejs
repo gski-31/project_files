@@ -1,0 +1,24 @@
+<% include partials/header %>
+<div class="container">
+
+<% allSushi.forEach((sushi)=>{ %>
+<div class="row">
+    <div class="col-md-3 col-sm-6">
+        <div class="card">
+            <img class="card-img-top" src="<%= sushi.image %>" alt="<%= sushi.name %>">
+            <div class="card-body">
+                <h5 class="card-title"><%= sushi.name %></h5>
+                <a href="/sushi/<%= sushi._id %>" class="btn btn-danger">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% }) %>
+
+
+
+
+
+</div>
+<% include partials/footer %>

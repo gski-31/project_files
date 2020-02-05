@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Project</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="intro_header">
+            <h1 id="title">Title Goes Here</h1>
+            <p id="description">Description Goes Here</p>
+        </div>
+
+        <div id="survey_area">
+            <form id="survey-form">
+                <div class="form_group">
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" name="user_name" placeholder="Your Name" required>
+                </div>
+                <div class="form_group">
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" name="user_email" placeholder="Yout Email" required>
+                </div>
+                <div class="form_group">
+                    <label id="number-label" for="number">ID Number</label>
+                    <input id="number" type="number" name="user_id" min="1" max="99999" placeholder="00000" required>
+                </div>
+                <div class="form_group">
+                    <label for="dropdown">Who is your favorite character?</label>
+                    <select id="dropdown" name="star_wars">
+                        <option value="vader">Vader</option>
+                        <option value="kenobi">Kenobi</option>
+                        <option value="ahsoka">Ahsoka</option>
+                        <option value="ventress">Ventress</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label>What is yor favortie trilogy?</label>
+                    <input type="radio" name="trilogy" value="prequel" checked>Prequel<br>
+                    <input type="radio" name="trilogy" value="original">Original<br>
+                    <input type="radio" name="trilogy" value="sequel">Sequel<br><br>
+                </div>
+                <div class="form_group">
+                    <label>Which others do you watch?</label>
+                    <input type="checkbox" name="clone" value="Bike">Clone Wars<br>
+                    <input type="checkbox" name="rebels" value="Car">Rebels<br>
+                </div>
+                <div class="form_group">
+                    <textarea name="comment" form="usreform">Enter text here...</textarea>
+                </div>
+                <div class="form_group">
+                    <div class="form_group">
+                        <input id="submit"   type="submit">
+                    </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+<!-- 
+
+
+
+
+
+
+
+User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+-->

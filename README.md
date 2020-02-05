@@ -1,2 +1,2 @@
-# simple_projects
-Simple single page projects
+# Projects
+Varying projects from assorted classes and challenges
