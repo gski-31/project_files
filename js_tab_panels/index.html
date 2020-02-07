@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="tabs">
+            <div role="tablist" aria-label="Javascript Basics">
+                <button role="tab" aria-selected="true" id="js">
+                    JavaScript
+                </button>
+                <button role="tab" aria-selected="false" id="node">node.js
+                </button>
+                <button role="tab" aria-selected="false" id="react">
+                    React
+                </button>
+            </div>
+            <div role="tabpanel" aria-labelledby="js">
+                <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript
+                    specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has
+                    curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+                </p>
+            </div>
+            <div role="tabpanel" aria-labelledby="node" hidden>
+                <p>Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript
+                    code outside of a browser.</p>
+            </div>
+            <div role="tabpanel" aria-labelledby="react" hidden>
+                <p>React is a JavaScript library for building user interfaces. It is maintained by Facebook and a
+                    community of individual developers and companies. React can be used as a base in the development of
+                    single-page or mobile applications.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
