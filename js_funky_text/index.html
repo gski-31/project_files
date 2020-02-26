@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚧 text transform</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+    }
+
+    .typer {
+      margin: 0 auto;
+      background: white;
+      width: 500px;
+      padding: 2rem;
+      padding: 2rem;
+      border-radius: 3px;
+      display: grid;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="typer">
+    <label for="askew">
+      <input type="radio" value="askew" id="askew" name="filter" checked>
+      Case Askew
+    </label>
+    <label for="funkify">
+      <input type="radio" value="funkify" id="funkify" name="filter">
+      Funkify Me
+    </label>
+    <label for="punctuation">
+      <input type="radio" value="punctuation" id="punctuation" name="filter">
+      Random …
+    </label>
+    <textarea name="text">Type here
+      .</textarea>
+    <p class="result"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
