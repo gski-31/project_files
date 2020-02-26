@@ -1,3 +1,5 @@
+// WILL BE REFACTORED IN LATER LESSON
+
 // closure function
 function Gallery(gallery) {
         if (!gallery) {
